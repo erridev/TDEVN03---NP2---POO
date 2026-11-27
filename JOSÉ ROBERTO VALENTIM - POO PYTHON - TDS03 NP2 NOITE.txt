@@ -1,0 +1,35 @@
+ROBERTO VALENTIM - TDS03 NOITE
+
+A Programação Orientada a Objetos (POO) é baseada em quatro pilares fundamentais, sendo eles:
+Abstração, Encapsulamento, Herança e Polimorfismo.
+
+[Abstração]
+
+A ABSTRAÇÃO consiste em isolar e representar as características e ações essenciais de um elemento do mundo real para o contexto do sistema, ignorando os seus detalhes internos mais complexos.
+
+- Foco no que é essencial, pois quem utiliza um objeto só precisa saber o que ele faz, e não como ele faz por dentro.
+- Exemplo prático e objetivo, pois ao modelar um Carro para um sistema de aluguel, importam atributos como placa e modelo e métodos como alugar(), descartando o funcionamento mecânico do motor.
+
+[Encapsulamento]
+
+Já o ENCAPSULAMENTO é a técnica de proteger os dados internos de um objeto, unindo atributos e métodos em uma mesma unidade (classe) e controlando o acesso externo a eles.
+
+- Proteção / integridade: isso evita que o estado interno de um objeto seja alterado de forma indevida ou direta por outras partes do código.
+- Controle de acesso: neste caso utilizam-se modificadores (private, public e protected) e métodos específicos (getters / setters) para validar e liberar somente o que é necessário.
+- Exemplo prático direto: o atributo saldo de uma ContaBancaria fica privado e só pode ser alterado por meio de métodos controlados, tipo sacar() e depositar(), que no caso verificam se há saldo suficiente antes da operação.
+
+[Herança]
+
+A HERANÇA permite que uma nova classe (subclasse ou classe filha) aproveite atributos e comportamentos de uma classe que já existe (superclasse ou classe pai), estabelecendo assim uma hierarquia.
+
+- Reutilização de código: elimina a necessidade de reescrever lógicas comuns em diferentes partes do sistema.
+- Especialização: a classe filha herda a base da classe pai e pode adicionar características próprias.
+- Exemplo prático direto: uma classe base Funcionario possui nome e salario, e as classes Gerente e Estagiario herdam esses dados e adicionam suas particularidades, como bonus ou BolsaAuxilio.
+
+[Polimorfismo]
+
+POLIMORFISMO significa "muitas formas" e representa a capacidade de objetos de diferentes classes responderem de maneiras distintas a uma mesma chamada de método.
+
+- Flexibilidade: isso permite tratar objetos diferentes de forma uniforme por meio de uma interface ou classe pai comum.
+- Redução de condicionais: diminui a necessidade de longas estruturas de if/else ou switch para verificar o tipo de cada objeto antes de executar uma ação.
+- Exemplo prático direto: este método EmitirSom() definido na classe Animal executa um latido na classe Cachorro e um miado na classe Gato.
